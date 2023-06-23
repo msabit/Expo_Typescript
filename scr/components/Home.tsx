@@ -1,16 +1,10 @@
 import React,{useState} from 'react';
 import {Button, StyleSheet, Text, View} from 'react-native';
+import {HomeProps} from '../constants/Types'
 
-export type Props = {
-  name: string;
-  countLevel?: number;
-  onIncrement:()=>void;
-  onDecrement:()=>void;
-};
 
-const Home: React.FC<Props> = (props) => {
+const Home: React.FC<HomeProps> = (props) => {
  
-
   return (
     <View style={styles.container}>
       <Text style={styles.greeting}>
